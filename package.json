@@ -1,0 +1,73 @@
+{
+  "name": "next-redux-boilerplate",
+  "version": "0.1.0",
+  "description": "A lot of boilerplate",
+  "private": true,
+  "scripts": {
+    "start": "tsc -p server; node out/server.js",
+    "build": "tsc -p server; next build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellomouse/next-redux-boilerplate.git"
+  },
+  "author": "iczero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellomouse/next-redux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hellomouse/next-redux-boilerplate#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@types/react-redux": "^7.1.7",
+    "axios": "^0.19.2",
+    "css-loader": "^3.5.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "extract-css-chunks-webpack-plugin": "^4.7.4",
+    "ignore-loader": "^0.1.2",
+    "morgan": "^1.10.0",
+    "next": "^9.3.6",
+    "next-redux-wrapper": "^6.0.0-rc.8",
+    "node-sass": "^4.14.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@hellomouse/eslint-config-typescript": "^1.1.8",
+    "@types/express": "^4.17.6",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsdoc": "^24.0.0",
+    "eslint-plugin-react": "^7.19.0",
+    "typescript": "^3.8.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
