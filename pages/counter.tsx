@@ -33,7 +33,7 @@ const Counter: NextPage<Props> = ({ path }) => {
       <button onClick={() => dispatch(resetCounter(+resetInput))}>reset</button>
     </p>
     <p>
-      <Link href="/">go home</Link>
+      <Link href="/"><a>go home</a></Link>
     </p>
   </div>;
 };

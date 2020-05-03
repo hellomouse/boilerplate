@@ -13,6 +13,6 @@ export default function Blah() {
       <span className={styles.things}>Hi!</span>
       other things here...
     </p>
-    <p><Link href="/">go home</Link></p>
+    <p><Link href="/"><a>go home</a></Link></p>
   </div>;
 }

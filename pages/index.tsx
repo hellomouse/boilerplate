@@ -11,7 +11,7 @@ export default function App() {
       <title>hi welcome to modern web development</title>
     </Head>
     <h2>Hi!</h2>
-    <p>the counter was {count} (<Link href="/counter">go to the counter</Link>)</p>
-    <p><Link href="/blah">go to the styles test page</Link></p>
+    <p>the counter was {count} (<Link href="/counter"><a>go to the counter</a></Link>)</p>
+    <p><Link href="/blah"><a>go to the styles test page</a></Link></p>
   </div>;
 }
