@@ -61,4 +61,7 @@ typings/
 /.next
 
 # server build output
+/build
+
+# next static export output
 /out

@@ -73,6 +73,6 @@ const Counter: NextPage<Props> = ({ path }) => {
 };
 
 // this page should be statically generated
-export const getStaticProps = () => ({ props: {} });
+export const getStaticProps = () => ({ props: { path: '/counter' } });
 
 export default connect((state: State) => ({ count: state.counter.count }))(Counter);
