@@ -15,3 +15,6 @@ export default function App() {
     <p><Link href="/blah"><a>go to the styles test page</a></Link></p>
   </div>;
 }
+
+// this page should be statically generated
+export const getStaticProps = () => ({ props: {} });

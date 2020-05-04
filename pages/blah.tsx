@@ -16,3 +16,6 @@ export default function Blah() {
     <p><Link href="/"><a>go home</a></Link></p>
   </div>;
 }
+
+// this page should be statically generated
+export const getStaticProps = () => ({ props: {} });

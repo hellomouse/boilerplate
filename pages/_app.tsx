@@ -6,11 +6,6 @@ import { wrapper } from '../store';
 import './index.scss';
 
 class OverriddenApp extends App<AppInitialProps> {
-  static async getInitialProps({ Component, ctx }: AppContext) {
-    const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-    return { pageProps };
-  }
-
   render() {
     const { Component, pageProps } = this.props;
     return <Component {...pageProps} />;
