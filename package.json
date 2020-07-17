@@ -20,7 +20,7 @@
   "homepage": "https://github.com/hellomouse/next-redux-boilerplate#readme",
   "dependencies": {
     "@material-ui/core": "^4.9.12",
-    "ajv": "^6.12.2",
+    "ajv": "^6.12.3",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
