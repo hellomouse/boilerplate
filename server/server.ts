@@ -1,5 +1,5 @@
 // @ts-check
-require('dotenv').config();
+require('dotenv').config(); // eslint-disable-line @typescript-eslint/no-var-requires
 import { promises as fsP } from 'fs';
 import http from 'http';
 import https from 'https';

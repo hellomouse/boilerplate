@@ -1,20 +1,16 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
-import { useSelector } from 'react-redux';
-import { State } from '../store';
+import ListLink from '../components/ListLink';
 
 export default function App() {
-  let count = useSelector((state: State) => state.counter.count);
   return <div>
     <Head>
-      <title>hi welcome to modern web development</title>
+      <title>Index</title>
     </Head>
-    <h2>Hi!</h2>
-    <p>the counter was {count} (<Link href="/counter"><a>go to the counter</a></Link>)</p>
-    <p><Link href="/blah"><a>go to the styles test page</a></Link></p>
+    <h2>Index of random stuff</h2>
+    <ul>
+      <ListLink target="blah" />
+      <ListLink target="login" />
+    </ul>
   </div>;
 }
-
-// this page should be statically generated
-export const getStaticProps = () => ({ props: {} });

@@ -18,6 +18,8 @@ module.exports = {
   },
   rules: {
     // typescript
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    // react components are usually PascalCase but explaining that to eslint is hard
+    '@typescript-eslint/naming-convention': 'off'
   }
 };
