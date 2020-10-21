@@ -20,6 +20,16 @@ module.exports = {
     // typescript
     'react/prop-types': 'off',
     // react components are usually PascalCase but explaining that to eslint is hard
-    '@typescript-eslint/naming-convention': 'off'
+    '@typescript-eslint/naming-convention': 'off',
+    // new _jsx transform no longer needs this
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/ban-types': ['error', {
+      types: {
+        // react uses {} as empty object even though it is completely allowed
+        // to assign 4 to a variable of type {}
+        '{}': false
+      },
+      extendDefaults: true
+    }]
   }
 };
