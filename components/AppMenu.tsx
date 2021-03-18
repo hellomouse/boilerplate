@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
-import { Menu } from '@material-ui/icons';
+import Menu from '@material-ui/icons/Menu';
 import theme from '../client/theme';
 import Link from 'next/link';
 
