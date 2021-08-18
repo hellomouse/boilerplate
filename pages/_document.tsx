@@ -30,9 +30,10 @@ const postcssOpts = {
   from: 'material-ui-base.css',
   map: IS_DEV ? { inline: true } : false
 };
-const cssnanoOpts = { preset: 'default' };
+let cssnanoInstance = cssnano({ preset: 'default' });
 async function minifyCss(input: string): Promise<string> {
-  let output = await cssnano.process(input, postcssOpts, cssnanoOpts);
+  // @ts-expect-error TODO: cssnano types seem to be broken
+  let output = await cssnanoInstance.process(input, postcssOpts);
   return output.css;
 }
 

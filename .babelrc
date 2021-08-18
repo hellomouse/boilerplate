@@ -4,6 +4,7 @@
       "next/babel",
       {
         "preset-env": {
+          // use browserslist config from package.json
           "targets": null
         }
       }

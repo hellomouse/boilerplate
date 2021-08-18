@@ -5,10 +5,10 @@ import { CssBaseline, StylesProvider, ThemeProvider } from '@material-ui/core';
 import theme from '../client/theme';
 
 // roboto font
-import 'fontsource-roboto/300.css';
-import 'fontsource-roboto/400.css';
-import 'fontsource-roboto/500.css';
-import 'fontsource-roboto/700.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 // to use cdn instead, use
 // <link rel="stylesheet"
 //   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />

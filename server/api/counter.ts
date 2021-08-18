@@ -1,20 +1,24 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-import Ajv from 'ajv';
+import { json as bodyParserJson } from 'body-parser';
+import Ajv, { JSONSchemaType } from 'ajv';
 
 let router = express.Router(); // eslint-disable-line new-cap
-let jsonParse = bodyParser.json();
+let jsonParse = bodyParserJson();
 let ajv = new Ajv();
 export let count = 0;
 
-router.get('/', (_req, res) => res.send({ count }));
+interface CountObject {
+  count: number;
+}
+
+router.get('/', (_req, res) => res.send({ count } as CountObject));
 
 let counterPostSchema = ajv.compile({
   type: 'object',
   properties: {
     count: { type: 'number' }
   }
-});
+} as JSONSchemaType<CountObject>);
 router.post('/', jsonParse, (req, res) => {
   if (!counterPostSchema(req.body)) {
     res.status(400).send({
